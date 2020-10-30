@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Fade from "react-reveal/Fade";
+import { Parallax } from "react-parallax";
+import Container from "react-bootstrap/Container";
+
+import About from './components/About/About';
+import Home from './components/Home/Home';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ position: "relative" }}>
+      <Home></Home>
+     <div>
+       <Parallax 
+        blur={{ min: -30, max: 30 }}
+        bgImage={require("./img/img/parallex/background.webp")}
+        bgImageAlt=""
+        strength={-200}
+       >
+         <Container className="container-box rounded">
+         <Fade duration={500}>
+     <About></About>
+     </Fade>
+     </Container>
+     </Parallax>
+     </div>
     </div>
   );
 }
