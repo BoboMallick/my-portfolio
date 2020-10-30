@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 
 import About from './components/About/About';
 import Home from './components/Home/Home';
+import Skill from './components/Skills/Skill';
 
 
 function App() {
@@ -22,6 +23,21 @@ function App() {
          <Container className="container-box rounded">
          <Fade duration={500}>
      <About></About>
+     </Fade>
+     </Container>
+     </Parallax>
+     </div>
+
+     <div>
+       <Parallax 
+        blur={{ min: -30, max: 30 }}
+        bgImage={require("./img/img/parallex/background.webp")}
+        bgImageAlt=""
+        strength={-200}
+       >
+         <Container className="container-box rounded">
+         <Fade duration={500}>
+     <Skill></Skill>
      </Fade>
      </Container>
      </Parallax>
