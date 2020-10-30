@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import Logo from '../../img/icons/logo.png';
 import './Mynavbar.css'
+import { Link } from 'react-router-dom';
 
 const Mynavbar = () => {
     return (
@@ -22,12 +23,13 @@ const Mynavbar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto ">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#skills">Skills</Nav.Link>
-              <Nav.Link href="#experience">Experience</Nav.Link>
-              <Nav.Link href="#projects">Projects</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Link className="mr-5" to="/home">Home</Link>
+              <Link className="mr-5" to="/about">About</Link>
+              <Link className="mr-5" to="/skills">Skills</Link>
+              <Link className="mr-5" to="/experience">Experience</Link>
+              <Link className="mr-5" to="/projects">Projects</Link>
+              <Link className="mr-5" to="/blog">Blog</Link>
+              <Link className="mr-5" to="/contact">Contact</Link>
             </Nav>
           </Navbar.Collapse>
         </div>

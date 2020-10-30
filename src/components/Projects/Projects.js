@@ -21,6 +21,7 @@ import L_HTML5 from "../../img/img/skills/html-5.svg";
 import L_CSS3 from "../../img/img/skills/css3.svg";
 import L_GIT from "../../img/img/skills/github.svg";
 import L_MATERIALUI from "../../img/img/skills/material-ui-1.svg";
+import Mynavbar from '../Navbar/Mynavbar';
 
 
 
@@ -28,6 +29,7 @@ import L_MATERIALUI from "../../img/img/skills/material-ui-1.svg";
 const Projects = () => {
     return (
         <div id="projects">
+          <Mynavbar></Mynavbar>
             <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
             <Timeline>
                 <Events>

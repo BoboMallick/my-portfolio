@@ -1,3 +1,6 @@
+#skill {
+  background-image: url(../../img/img/parallex/background.webp);
+}
 .focus {
     transition: transform 0.3s;
   }

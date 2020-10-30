@@ -6,10 +6,12 @@ import Image from 'react-bootstrap/Image';
 import Profile from '../../img/img/profile/katha.jpg';
 import Button from "react-bootstrap/Button";
 import './About.css';
+import Mynavbar from '../Navbar/Mynavbar';
 
 const About = () => {
     return (
         <div id="about">
+            <Mynavbar></Mynavbar>
             <div className="about">
                 <h1 className="pt-3 text-center font-details pb-3">ABOUT ME</h1>
                 <Container>
